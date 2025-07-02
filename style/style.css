@@ -1,9 +1,28 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      height: 100vh;
+
     }
 
-    .img {
-      width: 60px;
-      height: 60px;
+   div img.logo{
+      height: 70px;
+      width: 200px;
+      
+      
+    }
+
+    .casa{
+      font-size: 25px;
+    }
+      
+    .centalizar{
+      display: flex;
+    
+    }
+
+    .pagina1{
+      background-image: url("../assests/castelo.png");
+      width: 100vw;
+      height: 80vh;
     }
