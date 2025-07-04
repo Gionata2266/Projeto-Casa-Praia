@@ -1,28 +1,42 @@
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      height: 100vh;
+* {
+  margin: 0;
+}
 
-    }
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
 
-   div img.logo{
-      height: 70px;
-      width: 200px;
-      
-      
-    }
+}
 
-    .casa{
-      font-size: 25px;
-    }
-      
-    .centalizar{
-      display: flex;
-    
-    }
+.barra {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(203, 200, 200, 0.484);
+  height: 60px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
 
-    .pagina1{
-      background-image: url("../assests/castelo.png");
-      width: 100vw;
-      height: 80vh;
-    }
+div img.logo {
+  height: 70px;
+  width: 200px;
+}
+
+.contatar{
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+  gap: 35px;
+}
+
+
+.pagina1 {
+  background-image: url("/assests/Imagem\ do\ WhatsApp\ de\ 2025-06-29\ à\(s\)\ 14.43.40_bbd1e42b.jpg");
+  background-size: cover;
+  background-position-y: 25%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 80vh;
+}
