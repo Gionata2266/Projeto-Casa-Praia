@@ -31,7 +31,7 @@ body {
 div img.logo {
   width: 100%;
   max-width: 150px;
-  height: 85px;
+  height: 130px;
 }
 
 a{
@@ -46,28 +46,49 @@ a{
 
 .contato a button{
   border-radius: 100%;
-  height: 33px;
-  width: 38px;
+  height: 30px;
+  width: 35px;
 }
 .contato{
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
   height: 40px;
-  gap: 10px;
-  background: rgb(183, 183, 183);
-}
-.nav{
-  padding: 20px;
-  color: black;
-
+  background: rgba(183, 183, 183, 0.529);
 }
 
-.nav:hover{
- 
-  border-top: 3px solid rgb(38, 2, 168);
-  
+.nav {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  position: relative;
+  color: #333;
+  transition: color 0.3s ease;
 }
+
+.nav::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px; /* altura da borda */
+  width: 0%;
+  background-color: #3498db; /* cor da borda */
+  transition: width 0.3s ease;
+}
+
+.nav:hover::before {
+  width: 100%;
+}
+
+.nav:hover {
+  color: #3498db;
+}
+
+
+
+
 .Telefone:hover{
   background: rgba(177, 177, 177, 0.896)
 }
@@ -78,3 +99,25 @@ a{
 .Instagram:hover{
   background: rgb(213, 1, 160);
 }
+
+span{
+  width: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.inf{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contato div a{
+  color: rgba(68, 68, 68, 0.853);
+}
+
+.page1{
+  height: 100vh;
+  width: 100%;
+  background: #FFF5E1;
+}
+
