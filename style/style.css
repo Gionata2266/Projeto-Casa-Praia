@@ -15,11 +15,10 @@ body {
 .barra {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  background: rgba(73, 188, 48, 0.749);
-  height: 70px;
-  border: 2px solid black;  
-  border-radius: 8px;
+  align-items: center;  
+  height: 80px;
+  border: 2px solid black; 
+  box-shadow: 8px 1px 20px 1px; 
 
 
 }
@@ -47,30 +46,35 @@ a{
 
 .contato a button{
   border-radius: 100%;
-  height: 30px;
-  width:30px;
+  height: 33px;
+  width: 38px;
 }
 .contato{
   display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 40px;
+  gap: 10px;
+  background: rgb(183, 183, 183);
 }
 .nav{
   padding: 20px;
-  border-radius: 25px;
   color: black;
+
 }
 
 .nav:hover{
-  color: white;
-  background: black;
+ 
+  border-top: 3px solid rgb(38, 2, 168);
   
 }
 .Telefone:hover{
   background: rgba(177, 177, 177, 0.896)
 }
 .Whatsapp:hover{
-  background: rgb(1, 231, 1);
+  background: rgb(1, 200, 1);
 }
 
 .Instagram:hover{
-  background: rgb(254, 0, 190);
+  background: rgb(213, 1, 160);
 }
