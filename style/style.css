@@ -14,13 +14,10 @@ body {
 
 .barra {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;  
   height: 80px;
-  border: 2px solid black; 
   box-shadow: 8px 1px 20px 1px; 
-
-
 }
 
 .logo{
@@ -30,7 +27,7 @@ body {
 
 div img.logo {
   width: 100%;
-  max-width: 150px;
+  max-width: 250px;
   height: 130px;
 }
 
@@ -55,6 +52,7 @@ a{
   align-items: center;
   height: 40px;
   background: rgba(183, 183, 183, 0.529);
+    border: 1px solid black; 
 }
 
 .nav {
@@ -111,7 +109,7 @@ span{
   align-items: center;
   gap: 10px;
 }
-.contato div a{
+.contato span ~  a{
   color: rgba(68, 68, 68, 0.853);
 }
 
