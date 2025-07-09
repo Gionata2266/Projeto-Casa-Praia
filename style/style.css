@@ -219,3 +219,27 @@ span{
   margin: 8px 0;
   color: white;
 }
+.pagina2{
+  width: 100%;
+  background: rgb(203, 203, 203);
+  margin-top: 1%;
+  height: 25vh;
+  display: flex;
+
+}
+
+.localização{
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.lugar{
+  height: 30px;
+  width: auto;
+}
+
