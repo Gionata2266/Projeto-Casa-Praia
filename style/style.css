@@ -3,7 +3,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
+:root {/*Azul Opala    https://www.shutterstock.com/pt/color/opal-blue */
+  --cor-primaria: #2F3349;
+  --cor-secundaria: #2f3949;
+  --cor-fundo: #212833;
+  --cor-branco: #e8f1ff;
+  --cor-texto: #d2e3ff;
+  --cor-contraste: #8b9e9c  ;
+}
+
 
 body {
   font-family: Arial, sans-serif;
@@ -12,7 +22,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #4d869fe0;
+  background: var(--cor-fundo);
 }
 
 .barra {
@@ -21,7 +31,7 @@ body {
   align-items: center;  
   height: 80px;
   box-shadow: 8px 1px 20px 1px; 
-  background: whitesmoke;
+  background: var(--cor-branco);
 }
 
 .logo{
@@ -55,8 +65,7 @@ a{
   justify-content: space-between;
   align-items: center;
   height: 40px;
-  background: rgb(144, 229, 252);
-  border: 1px solid black; 
+  background: var(--cor-secundaria);
 }
 
 .nav {
@@ -65,7 +74,7 @@ a{
   padding: 10px 20px;
   font-size: 16px;
   position: relative;
-  color: #333;
+  color: var(--cor-contraste);       /**/
   transition: color 0.3s ease;
 }
 
@@ -76,7 +85,7 @@ a{
   left: 0;
   height: 3px; /* altura da borda */
   width: 0%;
-  background-color: #3498db; /* cor da borda */
+  background-color: var(--cor-secundaria); /* cor da borda */
   transition: width 0.3s ease;
 }
 
@@ -85,7 +94,7 @@ a{
 }
 
 .nav:hover {
-  color: #3498db;
+  color: var(--cor-secundaria);
 }
 
 
@@ -112,7 +121,7 @@ span{
   gap: 10px;
 }
 .contato span ~  a{
-  color: rgba(68, 68, 68, 0.853);
+  color: var(--cor-contraste);
 }
 
 
@@ -159,7 +168,7 @@ span{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.621);
+  background: var(--cor-texto);
   border: none;
   padding: 10px;
   font-size: 24px;
@@ -188,6 +197,7 @@ span{
   width: 100%;
   padding: 60px 20px; 
   text-align: center;
+  color: var(--cor-texto);
 }
 
 .casas-praia .conteudo {
@@ -197,13 +207,12 @@ span{
 
 .casas-praia h2 {
   font-size: 2.5rem;
-  color: #02cf4a; /* tom de azul piscina */
+  /* tom de azul piscina */
   margin-bottom: 25px;
 }
 
 .casas-praia p {
   font-size: 1.1rem;
-  color: white;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -217,30 +226,58 @@ span{
 .casas-praia ul li {
   font-size: 1.1rem;
   margin: 8px 0;
-  color: white;
+ 
 }
 .pagina2{
   width: 100%;
-  background: rgb(203, 203, 203);
-  margin-top: 1%;
-  height: 25vh;
+  background: var(--cor-branco);
+  height: 20vh;
   display: flex;
-
 }
-
-.localização{
+.conteudo2{
+  width: 50%;
   height: 100%;
-  width: 100%;
-  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
-
+  font-size: 25px;
+  color: var(--cor-primaria);
+  border-right: 1px solid;
 }
-.lugar{
-  height: 35px;
+
+.local{
+  height: 50px;
   width: auto;
-  
+  border: 3px solid;
+  border-radius: 100%;
+  padding: 5px;
 }
 
+.pagina3{
+  height: 150vh;
+  width: 100%;
+  background: var(--cor-contraste);/*  margin: 1% 1% 0px 10%;*/
+  display: flex;
+  justify-content: center;
+}
+
+
+ .img3{
+  height: 300px;
+  width: 755px;
+  margin: 2% 10px 0 0;
+ }
+ .img4{
+  height: 300px;
+  width: 377px;
+  margin:  0  0 px;
+ }
+
+
+
+ .img6{
+  height: 615px;
+  width: 450px;
+  margin: 1% 0  0 1%;
+
+ }
