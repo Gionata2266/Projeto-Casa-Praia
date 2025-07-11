@@ -253,31 +253,35 @@ span{
   padding: 5px;
 }
 
-.pagina3{
-  height: 150vh;
-  width: 100%;
-  background: var(--cor-contraste);/*  margin: 1% 1% 0px 10%;*/
-  display: flex;
-  justify-content: center;
+.galeria-fotos {
+  padding: 40px 20px;
+  background-color: var(--cor-secundaria);
+  text-align: center;
 }
 
+.galeria-fotos h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--cor-branco);
+}
 
- .img3{
-  height: 300px;
-  width: 755px;
-  margin: 2% 10px 0 0;
- }
- .img4{
-  height: 300px;
-  width: 377px;
-  margin:  0  0 px;
- }
+.grade-fotos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
 
+.grade-fotos img {
+  width: 100%;
+  max-width: 350px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
 
-
- .img6{
-  height: 615px;
-  width: 450px;
-  margin: 1% 0  0 1%;
-
- }
+.grade-fotos img:hover {
+  transform: scale(1.10);
+}
