@@ -13,10 +13,14 @@
   --cor-texto: #d2e3ff;
   --cor-contraste: #8b9e9c  ;
 }
+@font-face {
+  font-family: 'Waltograph';
+  src: url('waltograph/WaltographUI.ttf') format('truetype');
+}
 
 
 body {
-  font-family: Arial, sans-serif;
+   font-family: 'Waltograph';
   font-weight: bold;
   font-size: 10px;
   margin: 0;
