@@ -5,6 +5,8 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+
 :root {/*Azul Opala    https://www.shutterstock.com/pt/color/opal-blue */
   --cor-primaria: #2F3349;
   --cor-secundaria: #2f3949;
@@ -20,13 +22,14 @@
 
 
 body {
-   font-family: 'Waltograph';
+  font-family: 'Waltograph';
   font-weight: bold;
   font-size: 10px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background: var(--cor-fundo);
+  max-width: 100%;
 }
 
 .barra {
@@ -72,6 +75,7 @@ a{
   background: var(--cor-secundaria);
 }
 
+
 .nav {
   background: none;
   border: none;
@@ -102,15 +106,15 @@ a{
 }
 
 
-.Telefone:hover{
-  background: rgba(177, 177, 177, 0.896)
-}
+
 .Whatsapp:hover{
   background: rgb(1, 200, 1);
+  cursor: pointer;
 }
 
 .Instagram:hover{
   background: rgb(213, 1, 160);
+  cursor: pointer;
 }
 
 span{
@@ -256,6 +260,7 @@ span{
   padding: 5px;
 }
 
+
 .galeria-fotos {
   padding: 40px 20px;
   background-color: var(--cor-secundaria);
@@ -288,3 +293,81 @@ span{
 .grade-fotos img:hover {
   transform: scale(1.10);
 }
+
+
+.localização:hover,.openModal:hover{
+  color: white;
+  cursor: pointer;
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+
+}
+.modal-content{
+  position: relative;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 10px rgb(0,0,0,0.3);
+  max-width: 400px;
+}
+
+
+
+
+    .close{
+      position: absolute  ;
+      color: red;
+      font-size: 32px;
+      font-weight: bold;
+      cursor: pointer;
+      float: right;
+      top: 10px;
+      right: 30px;
+    }
+
+    .turismo img{
+      height: 500px;
+    }
+
+.whatsapp-fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 55px;
+  height: 55px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.whatsapp-fixed img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.whatsapp-fixed:hover {
+  transform: scale(1.0);
+  background-color: #1ebe5d;
+}
+

@@ -9,36 +9,40 @@
 </head>
 
 <body>
-
-<div style="position: fixed; bottom: 0; left: 95%; background-color: lightblue; padding: 10px;">
-  <img src="../assests/whatsapp 2.png" alt="" style="height: 40px;">
-</div>
+<a href="https://wa.me/5585992436089" class="whatsapp-fixed" target="_blank">
+  <img src="../assests/whatsapp.png" alt="WhatsApp">
+</a>
   <nav class="barra">
 
     <div class="logo">
       <a href="../html/index.html"><img class="logo" src="../assests/casas_castelo_transparente.png" alt=""></a>
     </div>
 
-    <a href="#" class="nav">Turismo</a>
-    <a href="#fotos" class="nav">Fotos</a>
-    <a href="#" class="nav">Casas</a>
+    <a href="#Turismo" class="nav">Turismo</a>
+    <a href="#fotos" class="nav">Casas</a>
+    <a href="#" class="nav">Fotos</a>
   </nav>
 
   <div class="contato">
     <span></span>
 
 
-    <a href="#">casasCastelo@hotmail.com</a>
-    <a href="#local">Localização</a>
-    <a href="#">(85)99243-6089</a>
+   
+    <a href="#local" class="localização">Localização</a>
+    <a class="openModal">(85)99243-6089</a>
 
-
+  <div id="phoneModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2>Telefone:</h2><br>
+      <p>(85) 99224-2674</p>
+    </div>
+  </div>
 
     <div>
-      <a href="#"><button class="Telefone"><img src="../assests/chamada-telefonica.png" alt=""></button></a>
-      <a href="https://wa.me/5585992436089"><button class="Whatsapp"><img src="../assests/whatsapp.png"
+      <a href="https://wa.me/5585992436089" target="_blank"><button class="Whatsapp"><img src="../assests/whatsapp.png"
             alt=""></button></a>
-      <a href="https://www.instagram.com/pousadacastelodasprincesas"><button class="Instagram"><img
+      <a href="https://www.instagram.com/pousadacastelodasprincesas" target="_blank"><button class="Instagram"><img
             src="../assests/instagram.png" alt=""></button></a>
     </div>
 
@@ -95,7 +99,7 @@
       <a href="https://www.google.com.br/maps/place/Pousada+Castelo+Das+Princesas/@-4.0572639,-38.1862825,19.02z/data=!4m9!3m8!1s0x7b89b7a0aead9f7:0xd3c0a6b187e1e172!5m2!4m1!1i2!8m2!3d-4.0571788!4d-38.1863615!16s%2Fg%2F11fhl_f8fk?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MDcwNy4wIKXMDSoASAFQAw%3D%3D"
         target="_blank" class="conteudo2">
         <img src="../assests/lugar-colocar.png" alt="" class="local">
-        <p><br><br> Nossa <br>&nbsp Localização</p>
+        <p style=" word-break: break-word;"><br><br> Nossa <br>Localização</p>
       </a>
 
     </section>
@@ -188,6 +192,18 @@
 </section>
 
 <hr>
+
+<section class="galeria-fotos" id="Turismo">
+  <h2>Turismo</h2>
+  <div class="grade-fotos turismo">
+    <img src="../assests/Turismo.jpg" alt="Foto 1">
+    <img src="../assests/Turismo (2).jpg" alt="Foto 2">
+    <img src="../assests/Turismo (3).jpg" alt="Foto 3">
+    <img src="../assests/Turismo (4).jpg" alt="Foto 3">
+    
+
+    
+  </div>
 
 
     <script src="../JS/script.js"></script>

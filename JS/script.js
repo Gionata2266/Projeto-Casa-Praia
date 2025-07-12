@@ -4,7 +4,7 @@
   const btnNext = document.getElementById("next");
   const btnPrev = document.getElementById("prev");
 
-  // Manual
+ 
   btnNext.addEventListener("click", () => {
     track.scrollBy({ left: 320, behavior: "smooth" });
   });
@@ -13,7 +13,7 @@
     track.scrollBy({ left: -320, behavior: "smooth" });
   });
 
-  // Automático
+
   setInterval(() => {
     track.scrollBy({ left: 320, behavior: "smooth" });
 
@@ -23,3 +23,20 @@
     }
   }, 3000); 
 
+ let openModal = document.querySelector(".openModal")
+ let closeModal = document.querySelector("#closeModal")
+ let modal = document.querySelector("#phoneModal")
+
+ openModal.onclick = ()=>{
+  modal.style.display = "flex"
+ };
+
+ closeModal.onclick = () =>{
+  modal.style.display = "none"
+ };
+
+ window.onclick = (e) =>{
+      if (e.target == modal) {
+        modal.style.display = 'none';
+      }
+ };
