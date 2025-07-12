@@ -254,6 +254,10 @@ span{
   border-right: 1px solid;
 }
 
+.conteudo2:hover{
+  background: rgba(255, 255, 255, 0.681);
+}
+
 .local{
   height: 50px;
   width: auto;
@@ -316,7 +320,7 @@ span{
 }
 .modal-content{
   position: relative;
-  background: white;
+  background: rgba(255, 255, 255, 0.919);
   padding: 40px;
   border-radius: 12px;
   text-align: center;
@@ -367,11 +371,11 @@ span{
 }
 
 .whatsapp-fixed:hover {
-  transform: scale(1.0);
+  transform: scale(1.20);
   background-color: #1ebe5d;
 }
 
 footer{
   margin-top: 5%;
-  color: white;
+  color: var(--cor-branco)
 }
