@@ -356,7 +356,7 @@ span{
   align-items: center;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
-  overflow: hidden;
+ 
 }
 
 .whatsapp-fixed img {
@@ -371,3 +371,7 @@ span{
   background-color: #1ebe5d;
 }
 
+footer{
+  margin-top: 5%;
+  color: white;
+}
