@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -7,14 +6,16 @@
 }
 
 
-:root {/*Azul Opala    https://www.shutterstock.com/pt/color/opal-blue */
+:root {
+  /*Azul Opala    https://www.shutterstock.com/pt/color/opal-blue */
   --cor-primaria: #2F3349;
   --cor-secundaria: #2f3949;
   --cor-fundo: #212833;
   --cor-branco: #e8f1ff;
   --cor-texto: #d2e3ff;
-  --cor-contraste: #8b9e9c  ;
+  --cor-contraste: #8b9e9c;
 }
+
 @font-face {
   font-family: 'Waltograph';
   src: url('waltograph/WaltographUI.ttf') format('truetype');
@@ -35,13 +36,13 @@ body {
 .barra {
   display: flex;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
   height: 80px;
-  box-shadow: 8px 1px 20px 1px; 
+  box-shadow: 8px 1px 20px 1px;
   background: var(--cor-branco);
 }
 
-.logo{
+.logo {
   display: flex;
   align-items: center;
 }
@@ -52,22 +53,23 @@ div img.logo {
   height: 130px;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.contato a button img{
+.contato a button img {
   height: 20px;
   width: 100%;
-  max-width:  20px;
+  max-width: 20px;
 }
 
-.contato a button{
+.contato a button {
   border-radius: 100%;
   height: 30px;
   width: 35px;
 }
-.contato{
+
+.contato {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -82,18 +84,21 @@ a{
   padding: 10px 20px;
   font-size: 16px;
   position: relative;
-  color: var(--cor-contraste);       /**/
+  color: var(--cor-contraste);
+  /**/
   transition: color 0.3s ease;
 }
 
-.nav::before{
+.nav::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  height: 3px; /* altura da borda */
+  height: 3px;
+  /* altura da borda */
   width: 0%;
-  background-color: var(--cor-secundaria); /* cor da borda */
+  background-color: var(--cor-secundaria);
+  /* cor da borda */
   transition: width 0.3s ease;
 }
 
@@ -107,35 +112,36 @@ a{
 
 
 
-.Whatsapp:hover{
+.Whatsapp:hover {
   background: rgb(1, 200, 1);
   cursor: pointer;
 }
 
-.Instagram:hover{
+.Instagram:hover {
   background: rgb(213, 1, 160);
   cursor: pointer;
 }
 
-span{
+span {
   width: 0px;
   margin: 0px;
   padding: 0px;
 }
 
-.inf{
+.inf {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.contato span ~  a{
+
+.contato span~a {
   color: var(--cor-contraste);
 }
 
 
 .carousel {
   position: relative;
-  width: 100% ;
+  width: 100%;
   overflow: hidden;
   padding: 15px 0;
 }
@@ -148,6 +154,7 @@ span{
   padding: 10px 60px;
   scrollbar-width: none;
 }
+
 .slider-track::-webkit-scrollbar {
   display: none;
 }
@@ -185,12 +192,15 @@ span{
   z-index: 10;
   transition: background 0.3s;
 }
+
 .arrow:hover {
   background: rgba(255, 255, 255, 0.471);
 }
+
 .arrow.left {
   left: 10px;
 }
+
 .arrow.right {
   right: 10px;
 }
@@ -198,12 +208,13 @@ span{
 
 
 .casas-praia {
-  background-image: url(../assests/Castelo\ \(24\).jpg); /* azul clarinho */
+  background-image: url(/assests/img/Castelo\ \(24\).jpg);
+  /* azul clarinho */
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 25%;
   width: 100%;
-  padding: 60px 20px; 
+  padding: 60px 20px;
   text-align: center;
   color: var(--cor-texto);
   margin-bottom: 2%;
@@ -235,15 +246,17 @@ span{
 .casas-praia ul li {
   font-size: 1.1rem;
   margin: 8px 0;
- 
+
 }
-.pagina2{
+
+.pagina2 {
   width: 100%;
   background: var(--cor-branco);
   height: 20vh;
   display: flex;
 }
-.conteudo2{
+
+.conteudo2 {
   width: 50%;
   height: 100%;
   display: flex;
@@ -251,14 +264,14 @@ span{
   justify-content: center;
   font-size: 25px;
   color: var(--cor-primaria);
-  border-right: 1px solid;
+
 }
 
-.conteudo2:hover{
+.conteudo2:hover {
   background: rgba(255, 255, 255, 0.681);
 }
 
-.local{
+.local {
   height: 50px;
   width: auto;
   padding: 5px;
@@ -299,12 +312,13 @@ span{
 }
 
 
-.localização:hover,.openModal:hover{
+.localização:hover,
+.openModal:hover {
   color: white;
   cursor: pointer;
 }
 
-.modal{
+.modal {
   display: none;
   position: fixed;
   z-index: 1000;
@@ -318,33 +332,107 @@ span{
   font-size: 32px;
 
 }
-.modal-content{
+
+.modal-content {
   position: relative;
   background: rgba(255, 255, 255, 0.919);
   padding: 40px;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 0 10px rgb(0,0,0,0.3);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
   max-width: 400px;
 }
 
 
 
 
-    .close{
-      position: absolute  ;
-      color: red;
-      font-size: 32px;
-      font-weight: bold;
-      cursor: pointer;
-      float: right;
-      top: 10px;
-      right: 30px;
-    }
+.close {
+  position: absolute;
+  color: red;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  float: right;
+  top: 10px;
+  right: 30px;
+}
 
-    .turismo img{
-      height: 500px;
-    }
+
+.cards-casas {
+  padding: 50px 20px;
+  background-color: #f5f5f5;
+}
+
+.cards-casas h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 3em;
+  color: #333;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  font-size: 2em;
+  overflow-x: auto;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 250px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-info h3 {
+  margin-top: 0;
+  color: #1a1a1a;
+}
+
+.card-info p {
+  margin: 10px 0;
+}
+
+.card-link {
+  margin-top: auto;
+  padding: 10px 20px;
+  background: #ff7b00;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  width: fit-content;
+  transition: background 0.3s;
+}
+
+.card-link:hover {
+  background: #cc6200;
+}
+
+.turismo img {
+  height: 500px;
+}
 
 .whatsapp-fixed {
   position: fixed;
@@ -358,9 +446,9 @@ span{
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
- 
+
 }
 
 .whatsapp-fixed img {
@@ -375,7 +463,8 @@ span{
   background-color: #1ebe5d;
 }
 
-footer{
+
+footer {
   margin-top: 5%;
   color: var(--cor-branco)
 }
