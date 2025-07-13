@@ -40,3 +40,17 @@
         modal.style.display = 'none';
       }
  };
+
+
+   const botao = document.getElementById('botaoMusica');
+  const audio = document.getElementById('audioMusica');
+
+  botao.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play();
+      botao.textContent = "Continue ⏸️"; // ícone de pausa
+    } else {
+      audio.pause();
+      botao.textContent = "Pausar ▶️"; // ícone de play
+    }
+  });
