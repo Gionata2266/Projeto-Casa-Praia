@@ -476,7 +476,7 @@ footer {
 #botaoMusica{
   background: var(--cor-texto);
   border-radius: 20px;
-  padding: 2px;
+  padding: 4px;
 }
 
 #botaoMusica:hover{
